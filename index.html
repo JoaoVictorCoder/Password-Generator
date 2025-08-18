@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
+    <link
+        href="https://cdn.jsdelivr.net/combine/npm/daisyui@5/base/rootcolor.css,npm/daisyui@5/base/rootscrolllock.css,npm/daisyui@5/base/scrollbar.css,npm/daisyui@5/base/reset.css,npm/daisyui@5/base/properties.css,npm/daisyui@5/base/rootscrollgutter.css,npm/daisyui@5/base/svg.css,npm/daisyui@5/components/button.css,npm/daisyui@5/components/input.css,npm/daisyui@5/components/toast.css,npm/daisyui@5/components/tooltip.css,npm/daisyui@5/colors/responsive.css,npm/daisyui@5/theme/light.css,npm/daisyui@5/theme/dark.css"
+        rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="h-full">
+    <main class="flex flex-col gap-2 h-full justify-center">
+        <h1
+            class="text-5xl font-bold text-center bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text animate-pulse">
+            PassGen</h1>
+        <div class="flex self-center items-center mt-10">
+            <input type="password" name="password" id="passwordInput" class="input input-primary">
+            <div class="tooltip" data-tip="Show Password" id="togglePasswordTooltip">
+                <button id="togglePassword" class="btn btn-primary"><iconify-icon icon="mdi:eye-outline"
+                        id="toggleIcon"></iconify-icon></button>
+            </div>
+            <div class="tooltip" data-tip="Copy to Clipboard">
+                <button id="copyButton" class="btn btn-primary"><iconify-icon
+                        icon="mdi:content-copy"></iconify-icon></button>
+            </div>
+        </div>
+        <button id="generate-button" class="btn btn-accent w-76 self-center">GENERATE</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
